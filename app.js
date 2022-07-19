@@ -52,7 +52,6 @@ const student = new Student({
     percentage: req.body.percentager,
     message: req.body.messager
 })
-console.log(req.body.namer)
 student.save();
 res.redirect("/")
 })
