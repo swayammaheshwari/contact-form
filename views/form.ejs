@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/" method="post" >
+        <h1 class="main-heading">Student form</h1>
+        <hr>
+        <h2>contact information</h2>
+        <p>name:
+        <input type="text" name="namer" placeholder="mendetary field" required >
+    </p>
+    <p>
+        <fieldset>
+            <legend>gender</legend>
+            male <input type="radio" name="genderr" id="gender" required>
+            female <input type="radio" name="genderr" id="gender" required>
+        </fieldset>
+    </p>
+    <p>
+        email: <input type="email" name="emailr" id="email" placeholder="mendetary field" required>
+    </p>
+    <p>
+        Birth date: <input type="date" name="birthdater" id="date" placeholder="mendetary field" required>
+    </p>
+        <p>address: <textarea name="addressr" id="address" cols="100" rows="5"></textarea></p>
+            <p>pincode: <input type="number" name="pincoder" id="pincode" placeholder="mendetary field" required></p>
+            <h2>Other information</h2>
+            <p>Subject taken by you:
+                <select name="subjectr" id="card_type" placeholder="mendetary field" required>
+                    
+                    <option value="">--select the Subject--</option>
+                    <option value="pcm">PCM</option>
+                    <option value="pcb">PCB</option>
+                    <option value="commerce">Commerce</option>
+                    <option value="arts">Arts</option>
+                </select>
+            </p>
+          <p>
+              10th percentage <input type="number" name="percentager" id="card_number" placeholder="mendetary field">
+          </p>
+          <p>leave a message (if require) <input type="text" name="messager" id="cvv"></p>  
+          <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
