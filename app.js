@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-swayam:testing123@cluster0.wyfjx9s.mongodb.net/newblogDB", {useNewUrlParser: true});
+mongoose.connect("mongodb://localhost/newblogDB", {useNewUrlParser: true});
 
 const studentSchema = {
     name: String,
